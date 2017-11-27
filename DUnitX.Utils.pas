@@ -248,7 +248,7 @@ type
 
     {$REGION 'Documentation'}
     ///	<param name="AName">
-    ///	  Name of the member to find
+    ///	  Name of theÂ member to find
     ///	</param>
     ///	<param name="AMember">
     ///	  Member that was found when Result is <b>True</b>
@@ -286,7 +286,7 @@ type
 
     {$REGION 'Documentation'}
     ///	<summary>
-    ///	  Retrieves the property with the given name and returns if this was
+    ///	  Retrieves theÂ property with the given name and returns if this was
     ///	  successful.
     ///	</summary>
     ///	<param name="AName">
@@ -315,7 +315,7 @@ type
 
   {$REGION 'Documentation'}
   ///	<summary>
-  ///	  Extends <see cref="System.Rtti.TRttiField">TRttiField</see> for easier RTTI
+  ///	  ExtendsÂ <see cref="System.Rtti.TRttiField">TRttiField</see> for easier RTTI
   ///	  use.
   ///	</summary>
   {$ENDREGION}
@@ -323,7 +323,7 @@ type
   public
     {$REGION 'Documentation'}
     ///	<summary>
-    ///	  Retrieves the value of the field and returns if this was successful.
+    ///	  Retrieves theÂ value of the field and returns if this was successful.
     ///	</summary>
     ///	<param name="Instance">
     ///	  Pointer to the instance of the field
@@ -339,7 +339,7 @@ type
 
   {$REGION 'Documentation'}
   ///	<summary>
-  ///	  Extends <see cref="Rtti.TRttiInstanceTypeHelper">TRttiInstanceTypeHelper</see>
+  ///	  ExtendsÂ <see cref="Rtti.TRttiInstanceTypeHelper">TRttiInstanceTypeHelper</see>
   ///	  for easier RTTI use.
   ///	</summary>
   {$ENDREGION}
@@ -354,7 +354,7 @@ type
 
   {$REGION 'Documentation'}
   ///	<summary>
-  ///	  Extends <see cref="System.Rtti.TRttiInvokableType">TRttiInvokableType</see>
+  ///	  ExtendsÂ <see cref="System.Rtti.TRttiInvokableType">TRttiInvokableType</see>
   ///	  for easier RTTI use.
   ///	</summary>
   {$ENDREGION}
@@ -434,7 +434,7 @@ type
   public
     {$REGION 'Documentation'}
     ///	<summary>
-    ///	  Retrieves the value of the property and returns if this was
+    ///	  Retrieves the value of theÂ property and returns if this was
     ///	  successful.
     ///	</summary>
     ///	<param name="Instance">
@@ -448,7 +448,7 @@ type
 
     {$REGION 'Documentation'}
     ///	<summary>
-    ///	  Sets the value of the property and returns if this was successful.
+    ///	  SetsÂ the value of the property and returns if this was successful.
     ///	</summary>
     ///	<param name="Instance">
     ///	  Pointer to the instance of the field
@@ -900,7 +900,7 @@ begin
   Result := False;
 end;
 
-{$IFDEF XE3_UP}
+{$IFDEF DELPHI_XE3_UP}
 function ConvStr2DynArray(const ASource: TValue; ATarget: PTypeInfo; out AResult: TValue): Boolean;
 var
   s: string;
@@ -1359,7 +1359,7 @@ const
       // tkSet, tkClass, tkMethod, tkWChar, tkLString, tkWString
       ConvFail, ConvFail, ConvFail, ConvFail, ConvFail, ConvFail,
       // tkVariant, tkArray, tkRecord, tkInterface, tkInt64, tkDynArray
-      ConvFail, ConvFail, ConvFail, ConvFail, ConvStr2Ord, {$IFDEF XE3_UP}ConvStr2DynArray{$ELSE}ConvFail{$ENDIF},
+      ConvFail, ConvFail, ConvFail, ConvFail, ConvStr2Ord, {$IFDEF DELPHI_XE3_UP}ConvStr2DynArray{$ELSE}ConvFail{$ENDIF},
       // tkUString, tkClassRef, tkPointer, tkProcedure
       ConvFail, ConvFail, ConvFail, ConvFail
     ),
